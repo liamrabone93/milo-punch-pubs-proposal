@@ -11,13 +11,13 @@
 
 :root{
   --amber:#D44E0A;--amber2:#E86820;--amber3:#F58840;
-  --bg:#080c14;--bg2:#0e1420;--bg3:#141e30;
+  --bg:#1A0C04;--bg2:#241408;--bg3:#2E1C0C;
   --card:#ffffff0d;--card-border:#ffffff1a;
   --white:#ffffff;--muted:rgba(255,255,255,.55);--dim:rgba(255,255,255,.3);
 }
 
 html{font-size:16px;scroll-behavior:smooth}
-body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--white);
+body{font-family:'DM Sans',system-ui,sans-serif;background:#FFF8F4;color:#2A1208;
      line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 
 /* ─── KEYFRAMES ──────────────────────────────────────── */
@@ -275,6 +275,110 @@ tbody tr:hover td.mc{background:rgba(212,78,10,.12)}
   h1{font-size:2.2rem}
   #video-section{padding:0 24px 60px}
 }
+</style>
+
+<style id="brand-light-override">
+/* ── Brand light theme override ── */
+
+/* Body and general text */
+body { background:#FFF8F4 !important; color:#2A1208 !important; }
+
+/* Section labels and titles in light sections */
+.section .sec-label,
+.demo-title-wrap .sec-label { color:#D44E0A !important; }
+.section .sec-title { color:#2A1208 !important; font-family:'Fraunces',Georgia,serif; }
+.section .sec-sub { color:rgba(42,18,8,.55) !important; }
+
+/* Process cards — on light bg */
+.section .p-card {
+  background:rgba(212,78,10,.06) !important;
+  border:1px solid rgba(212,78,10,.18) !important;
+}
+.section .p-card h4 { color:#2A1208 !important; }
+.section .p-card p { color:rgba(42,18,8,.6) !important; }
+.section .p-num { color:#D44E0A !important; }
+
+/* Case study cards */
+.section .case-card {
+  background:rgba(212,78,10,.06) !important;
+  border:1px solid rgba(212,78,10,.15) !important;
+}
+.section .case-stat { color:#D44E0A !important; }
+.section .case-label { color:rgba(42,18,8,.4) !important; text-transform:uppercase; letter-spacing:.12em; font-size:.68rem; font-weight:700; }
+.section .case-card p { color:rgba(42,18,8,.65) !important; }
+.section .case-card p strong { color:#2A1208 !important; }
+
+/* Contacts */
+.section .contact-card {
+  background:#FFF8F4 !important;
+  border:1.5px solid rgba(212,78,10,.2) !important;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+.section .contact-card.primary {
+  background:rgba(212,78,10,.08) !important;
+  border-color:rgba(212,78,10,.35) !important;
+}
+.section .contact-card h4 { color:#2A1208 !important; }
+.section .contact-role { color:#D44E0A !important; }
+.section .contact-card p { color:rgba(42,18,8,.65) !important; }
+.section .contact-tag { background:#D44E0A !important; }
+
+/* Comparison table — keep dark bg but brand colors */
+#compare { background:#1A0C04 !important; }
+.compare-inner .sec-title { color:var(--white) !important; }
+.compare-inner .sec-label { color:#E86820 !important; }
+
+/* Pricing cards */
+.section .p-tier {
+  background:#FFF8F4 !important;
+  border:1.5px solid rgba(212,78,10,.2) !important;
+  box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+.section .p-tier.featured {
+  background:rgba(212,78,10,.08) !important;
+  border-color:rgba(212,78,10,.4) !important;
+}
+.section .p-name { color:rgba(42,18,8,.4) !important; }
+.section .p-price { color:#D44E0A !important; }
+.section .p-note { color:rgba(42,18,8,.4) !important; }
+.section .p-tier ul li { color:rgba(42,18,8,.7) !important; border-top:1px solid rgba(212,78,10,.1) !important; }
+.section .p-tier ul li::before { color:#D44E0A !important; }
+.section .p-note2 { background:rgba(212,78,10,.08) !important; border-color:rgba(212,78,10,.2) !important; }
+.section .p-note2 strong { color:#D44E0A !important; }
+.section .featured-tag { background:#D44E0A !important; }
+
+/* Next steps cards */
+.section .ns-card {
+  background:#FFF8F4 !important;
+  border:1px solid rgba(212,78,10,.18) !important;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+.section .ns-card.hi {
+  background:rgba(212,78,10,.08) !important;
+  border-color:rgba(212,78,10,.35) !important;
+}
+.section .ns-phase { color:#D44E0A !important; }
+.section .ns-card h4 { color:#2A1208 !important; }
+.section .ns-card p { color:rgba(42,18,8,.65) !important; }
+
+/* Steps (pilot process) */
+.section .step-body h4 { color:#2A1208 !important; }
+.section .step-body p { color:rgba(42,18,8,.65) !important; }
+.section .step-num { background:#D44E0A !important; }
+.section .step:not(:last-child)::before { background:rgba(212,78,10,.2) !important; }
+
+/* Two-col section labels/titles */
+.section .section-label,
+.section .sec-label { color:#D44E0A !important; }
+
+/* Stats strip — keep dark brand color */
+.stats-strip { background:#241408 !important; }
+.s-num { color:#E86820 !important; }
+.s-label { color:rgba(255,255,255,.6) !important; }
+.stats-strip .s-item+.s-item { border-left-color:rgba(255,255,255,.12) !important; }
+
+/* Scrollbar and selection */
+::selection { background:#D44E0A; color:white; }
 </style>
 </head>
 <body>
